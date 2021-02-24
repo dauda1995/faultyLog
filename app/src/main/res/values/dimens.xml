@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_heading_req">18sp</dimen>
+    <dimen name="text_grade">18sp</dimen>
+    <dimen name="text_body"></dimen>
+    <dimen name="cardTop">16dp</dimen>
+    <dimen name="cardside">8dp</dimen>
+    <dimen name="carddown">16dp</dimen>
+    <dimen name="text_bod">5dp</dimen>
+    <dimen name="body_margin_bottom_card">12dp</dimen>
+    <dimen name="margin_top_body_card">2dp</dimen>
+    <dimen name="margin_top_head_card">13dp</dimen>
+    <dimen name="heading_margin_card_left">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

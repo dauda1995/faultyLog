@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/txlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/editInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/feeder_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="feeder"
+                android:imeOptions="actionNext|actionSend" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/editInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/isolateddt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="isolated DT/ feeder"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            style="@style/editInput"
+            android:id="@+id/capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+
+        <Spinner
+            style="@style/editInput"
+            android:id="@+id/voltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/capacity"
+            app:layout_constraintStart_toStartOf="@+id/capacity"
+            app:layout_constraintTop_toBottomOf="@+id/capacity" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editInput"
+            android:id="@+id/textInputLayout7"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/voltage"
+            app:layout_constraintTop_toBottomOf="@+id/voltage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_of_occurr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="date of occurrence"
+                android:imeOptions="actionNext" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editInput"
+            android:id="@+id/textInputLayout9"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout7"
+            app:layout_constraintEnd_toEndOf="@+id/voltage"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/voltage">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/duration_of_"
+                style="@style/editInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="date of restoration"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout11"
+        style="@style/editInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/details"
+            style="@style/editInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nature of fault"
+            android:imeOptions="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editInput"
+            android:id="@+id/textInputLayout13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout11"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout11"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="action taken"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/editInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout13"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout13"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="remark"
+                android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/editInput"
+        android:layout_marginTop="8dp"
+        android:id="@+id/textInputLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        tools:layout_editor_absoluteX="166dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/area_aff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="area affected" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

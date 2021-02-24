@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <Button
+        android:id="@+id/agbara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="AGBARA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <Button
+        android:id="@+id/aiyetoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aiyetoro"
+        app:layout_constraintEnd_toEndOf="@+id/agbara"
+        app:layout_constraintStart_toStartOf="@+id/agbara"
+        app:layout_constraintTop_toBottomOf="@+id/agbara" />
+
+    <Button
+        android:id="@+id/oko_afo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="oko-afo"
+        app:layout_constraintEnd_toEndOf="@+id/aiyetoro"
+        app:layout_constraintStart_toStartOf="@+id/aiyetoro"
+        app:layout_constraintTop_toBottomOf="@+id/aiyetoro" />
+
+    <Button
+        android:id="@+id/aradagun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="aradagun"
+        app:layout_constraintEnd_toEndOf="@+id/oko_afo"
+        app:layout_constraintStart_toStartOf="@+id/oko_afo"
+        app:layout_constraintTop_toBottomOf="@+id/oko_afo"
+        app:strokeColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/igborosun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="igborosun"
+        app:layout_constraintEnd_toEndOf="@+id/aradagun"
+        app:layout_constraintStart_toStartOf="@+id/aradagun"
+        app:layout_constraintTop_toBottomOf="@+id/aradagun" />
+
+    <Button
+        android:id="@+id/badagry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="badagry"
+        app:layout_constraintEnd_toEndOf="@+id/igborosun"
+        app:layout_constraintStart_toStartOf="@+id/igborosun"
+        app:layout_constraintTop_toBottomOf="@+id/igborosun" />
+
+    <Button
+        android:id="@+id/om"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="om district"
+        app:layout_constraintEnd_toEndOf="@+id/badagry"
+        app:layout_constraintStart_toStartOf="@+id/badagry"
+        app:layout_constraintTop_toBottomOf="@+id/badagry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

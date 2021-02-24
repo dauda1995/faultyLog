@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/submitFaultLog"
+        android:title="Breakdown"/>
+    <item
+        android:id="@+id/preventiveFragment"
+        android:title="Preventive"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/transformerFragment"
+        android:title="Transformers"
+        app:showAsAction="withText" />
+</menu>

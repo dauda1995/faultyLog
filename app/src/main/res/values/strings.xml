@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">FaultLog</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ok">Ok</string>
+    <string name="submit">form submitted</string>
+
+    <string name="required">Required</string>
+
+    <string-array name="ratings">
+        <item>15MVA</item>
+        <item>7.5MVA</item>
+        <item>1MVA</item>
+        <item>500KVA</item>
+        <item>300KVA</item>
+        <item>50KVA</item>
+        <item>1KVA</item>
+        <item>200KVA</item>
+        <item>100KVA</item>
+    </string-array>
+
+    <string-array name="voltage">
+        <item>33/11KV</item>
+        <item>33/0.415KV</item>
+        <item>11/0.415KV</item>
+        <item>33KV</item>
+        <item>11kKV</item>
+    </string-array>
+    <string name="title_activity_form">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="list_icon">list</string>
+    <string name="update">form updated</string>
+    <string name="unable">Unable to submit form</string>
+    <string name="warning_update">You are about to Update the database, are you sure?</string>
+    <string name="yes">yes</string>
+
+</resources>

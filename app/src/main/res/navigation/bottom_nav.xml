@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/submitFaultLog2">
+
+    <fragment
+        android:id="@+id/preventiveFragment2"
+        android:name="com.example.faultlog.PreventiveFragment"
+        android:label="Preventive Maintenance"
+        tools:layout="@layout/fragment_preventive" >
+        <action
+            android:id="@+id/action_preventiveFragment2_to_faultList2"
+            app:destination="@id/faultList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/transformerFragment2"
+        android:name="com.example.faultlog.TransformerFragment"
+        android:label="Transformer Manitenance"
+        tools:layout="@layout/fragment_transformer">
+        <action
+            android:id="@+id/action_transformerFragment2_to_faultList2"
+            app:destination="@id/faultList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/submitFaultLog2"
+        android:name="com.example.faultlog.SubmitFaultLog"
+        android:label="Breakdown Maintenance"
+        tools:layout="@layout/fragment_submit_fault_log" >
+        <action
+            android:id="@+id/action_submitFaultLog2_to_faultList2"
+            app:destination="@id/faultList2" />
+        <argument
+            android:name="zone"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/faultList2"
+        android:name="com.example.faultlog.FaultList"
+        android:label="FaultList" >
+        <argument
+            android:name="zone"
+            app:argType="string" />
+        <argument
+            android:name="logType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/breakdownEditFragment"
+        android:name="com.example.faultlog.ui.BreakdownEditFragment"
+        android:label="BreakdownEditFragment" />
+    <fragment
+        android:id="@+id/preventiveEditFragment"
+        android:name="com.example.faultlog.ui.PreventiveEditFragment"
+        android:label="PreventiveEditFragment" />
+    <fragment
+        android:id="@+id/transformerEditFragment"
+        android:name="com.example.faultlog.ui.TransformerEditFragment"
+        android:label="TransformerEditFragment" />
+</navigation>
